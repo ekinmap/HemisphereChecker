@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class HemisphereChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите широту города (в градусах): ");
+        double latitude = scanner.nextDouble();
+        
+        if (latitude >= 0) {
+            System.out.println("Город находится на северном полушарии.");
+        } else {
+            System.out.println("Город находится на южном полушарии.");
+        }
+    }
+}
